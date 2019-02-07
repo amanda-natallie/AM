@@ -6,7 +6,7 @@ html {
     font-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
-}
+} 
 .hidden {
     display: none !important
 }
@@ -2513,11 +2513,15 @@ a:focus {
 }
 
 .add-cart {
-    color: #6f6e6b;
+    margin-top: 10px;
+    font-size: 30px !important;
+     color: #fff;
+    border-color: #2b2b2c;
+    background-color: #2b2b2c;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    padding: .85rem .5rem;
+    padding: 30px 50px;
     min-width: 115px;
     z-index: 2;
     transition-duration: 0s
@@ -6517,7 +6521,6 @@ a:focus {
     letter-spacing: .005em;
     padding-bottom: 2.7rem;
     border-bottom: 1px solid #dae2e6;
-    margin-bottom: 2.7rem
 }
 
 .product-single-details .product-action {
@@ -6781,7 +6784,7 @@ a:focus {
 .product-single-filter {
     display: flex;
     align-items: center;
-    padding-bottom: 2.7rem;
+    padding-bottom: 1.7rem;
     border-bottom: 1px solid #dae2e6
 }
 
@@ -10695,4 +10698,141 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     .mb-xxl-10 {
         margin-bottom: 10rem !important
     }
+}
+/*meus ajustes*/
+.cc-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.cc-selector-2 input {
+  position: absolute;
+  z-index: 999;
+}
+
+.cc-selector-2 input:active +.drinkcard-cc,
+.cc-selector input:active +.drinkcard-cc {
+  opacity: .9;
+}
+
+.cc-selector-2 input:checked +.drinkcard-cc,
+.cc-selector input:checked +.drinkcard-cc {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  border:3px solid #000
+}
+
+.drinkcard-cc {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px; 
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  -webkit-filter: opacity(.7);
+  -moz-filter: opacity(.7);
+  filter:  opacity(.7);
+}
+
+
+.drinkcard-cc:hover {
+  -webkit-filter:  opacity(1);
+  -moz-filter:  opacity(1);
+  filter:  opacity(1);
+}
+ 
+.boxed label {
+  display: inline-block;
+  padding: 5px 15px;
+  background: #ccc;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-weight: 500;
+  cursor: pointer
+}
+
+.boxed input[type="radio"] {
+  display: none;
+}
+
+.boxed input[type="radio"]:checked + label {
+  border: solid 2px black;
+}
+.input-file-container {
+  position: relative;
+  width: 225px;
+} 
+.js .input-file-trigger {
+  
+  margin-bottom: -10px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  background: #FFCC29;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+.js .input-file {
+ 
+  opacity: 0;
+ 
+  cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: #2B2B2C;
+  color: #fff;
+}
+
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+  content: "Selected file: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+h2 + P {
+  text-align: center;
+}
+.txtcenter {
+  margin-top: 4em;
+  font-size: .9em;
+  text-align: center;
+  color: #aaa;
+}
+.copy {
+  margin-top: 2em;
+}
+.copy a {
+  text-decoration: none;
+  color: #1ABC9C;
+}
+.rounded-textarea{
+    height:45px;
+    border-radius: 5px;
+    resize: none;
+    width: 100%
+}
+.full-width {
+    width: 100%
 }
